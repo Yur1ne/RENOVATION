@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3x2 Image Layout</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6fff8; /* Light gray background */
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; /* Increased gap between images */
+    padding: 20px; /* Reduced padding */
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    height: 500px; /* Increased height */
+    background-color: #ffffff; /* White background */
+    border-radius: 30px; /* Slightly rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+
+  .image-placeholder:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
+  }
+
+  .image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .label {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px; /* Added margin */
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 20px; /* Added margin */
+
+  }
+  h2{
+      text-align: center;
+      padding-top: 20px;
+      color: rgb(96, 219, 87);
+    }
+  
+    h3{
+      text-align: center;
+      color:rgb(247, 112, 112);
+    }
+
+  
+  
+
+</style>
+</head>
+<body>
+<h1>Lucky Draw</h1>
+<h2>8487 Points</h2>
+<h3>Every $1 spent will be converted to 10 points</h3>
+<p>Redeem your points accumulated for lucky draw chances to stand a chance to win some of these attractive prizes as seen below!<br>
+Redeem as many times as you want to increase your chances of winning against other players.</p>
+<div class="container">
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/iphone.jpeg">
+    </div>
+    <div class="label">1x chance to win iPhone 15 Pro Max <br>(100 points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/s24ultra.jpeg">
+    </div>
+    <div class="label">1x chance to win Samsung Galaxy S24 Ultra<br>(100 points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/pixel8pro.jpg">
+    </div>
+    <div class="label">1x chance to win Google Pixel 8 Pro <br>(100 points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/homepod.jpeg">
+    </div>
+    <div class="label">1x chance to win Homepod Mini <br> (100 points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/sonyxm5.webp">
+    </div>
+    <div class="label">1x chance to win Sony XM5 <br>(100 points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/osim.webp">
+    </div>
+    <div class="label">1x chance to win Osim Foot Massager <br> (100 points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/secretlab.webp">
+    </div>
+    <div class="label">1x chance to win SecretLab TITAN Evo Chair (100 Points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/luckydraw/dyson.webp">
+    </div>
+    <div class="label">1x chance to win Dyson v15 Vacuum <br>(100 Points)</div>
+  </div>
+</div>
+</body>
+</html>

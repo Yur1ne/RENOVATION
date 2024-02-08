@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3x2 Image Layout</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6fff8; /* Light gray background */
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Increased gap between images */
+    padding: 20px; /* Reduced padding */
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    height: 500px; /* Increased height */
+    background-color: #fff; /* White background */
+    border-radius: 30px; /* Slightly rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+
+  .image-placeholder:hover {
+    transform: scale(1.05); /* Enlarge slightly on hover */
+  }
+
+  .image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .label {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px; /* Added margin */
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 20px; /* Added margin */
+
+  }
+  h2{
+      text-align: center;
+      padding-top: 20px;
+      color: rgb(96, 219, 87);
+    }
+  
+    h3{
+      text-align: center;
+      color:rgb(247, 112, 112);
+    }
+
+  
+  
+
+</style>
+</head>
+<body>
+<h1>Discount Rewards</h1>
+<h2>8487 Points</h2>
+<h3>Every $1 spent will be converted to 10 points</h3>
+<p>Exchange your points for these discount rewards that can be used to offset future purchases for our services!</p>
+<div class="container">
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/rewards/r1.jpeg" alt="Treasure 1">
+    </div>
+    <div class="label">5% off your next purchase. (5000 Points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/rewards/r2.jpeg" alt="Treasure 2">
+    </div>
+    <div class="label">10% off your next purchase. (9500 Points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/rewards/r3.jpeg" alt="Treasure 3">
+    </div>
+    <div class="label">15% off your next purchase. (13500 Points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/rewards/r4.jpeg" alt="Treasure 4">
+    </div>
+    <div class="label">$100 off your next renovation. (3000 Points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/rewards/r5.jpeg" alt="Treasure 5">
+    </div>
+    <div class="label">$200 off your next renovation. (5000 Points)</div>
+  </div>
+  <div class="image-container">
+    <div class="image-placeholder">
+      <img src="img/rewards/r6.jpeg" alt="Treasure 6">
+    </div>
+    <div class="label">$300 off your next renovation. (8000 Points)</div>
+  </div>
+</div>
+</body>
+</html>
